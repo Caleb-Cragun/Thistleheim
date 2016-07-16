@@ -1,0 +1,133 @@
+/*
+Style sheet for screened devies
+Created on: 4 March 2015
+Author: Caleb Cragun
+*/
+
+/*Sets box model and background color*/
+*{
+    box-sizing: border-box;
+}
+
+/*Sets heading color, font, and alignment*/
+h1,h2,h3,h4{
+   font-family: sans-serif;
+   color: #271f27;
+   font-weight: normal;
+}
+
+/*Sets body default text, color, and background*/
+body{
+   font-family: Verdana,sans-serif;
+   color: #271f27;
+   padding: 10px;
+  background-color: #e3dedb;
+}
+
+/*Paragraph formatting*/
+p{
+  line-height: 1.5;
+}
+
+/*Background styling for main paragraph*/
+main>div {
+    padding: 30px;
+    background: #fff;
+    min-height: 500px;
+    margin-top: 20px;
+}
+*[role]>div {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*Navigation Styling*/
+nav{
+	font-family:sans-serif;
+}
+
+nav ul{
+	background:#271f27;
+	box-shadow:0 0 9px #fdfabc;
+	padding:0 20px;
+	border-radius:20px;
+	list-style:none;
+	position:relative;
+	display:inline-table;
+}
+
+nav ul li{
+	float:left
+}
+
+a:link,a:visited{
+	color:#ff240a;
+	text-decoration:none;
+}
+
+nav ul li:hover{
+	background:#ff240a;
+}
+
+nav ul li:hover a{
+	color:#e3dedb;
+}
+
+nav ul li a{
+	display:block;
+	padding:10px 15px;
+	color:#757575;
+	text-decoration:none;
+}
+
+/*Main Footer Rule*/
+footer[role] {
+    width: 100%;
+    background-color: #271f27;
+    box-shadow: 0 0 5px #fdfabc;
+    padding: 1em 0 2em;
+    font-size: .75em;
+    color: #eee;  
+  border-radius: 10px;
+}
+footer[role] ul {
+    padding: 0;
+}
+footer[role] li {
+    float: left;
+    margin-right: 5px;
+}
+footer[role] a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width:700px){
+  nav[role]{
+    font-size: 2vw;
+    position: fixed;
+    bottom: 0;
+  }
+  nav[role]>div{
+    width: 100%;
+  }
+  nav[role] li{
+    margin: 0;
+    flex: 1;
+  }
+  header[role] h1{
+    font-size: 2em;
+    text-align: center;
+  }
+  img{
+    max-width: 100%;
+  }
+  video{
+    max-width: 100%;
+  }
+  audio{
+    max-width: 100%;
+  }
+  footer[role]{
+    margin-bottom: 4em;
+  }
+}
