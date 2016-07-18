@@ -32,6 +32,9 @@
                     <p>
                         <a href="/phpGame/index.php">Go to the game</a>
                     </p>
+                    <p>
+                        <a href="/phpGame/presentation.php">Go to presentation</a>
+                    </p>
                 </div>
             </main>
             <footer role='contentinfo'>
